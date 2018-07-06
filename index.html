@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>スライドショー - 基本形 | jQuery </title>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+	<h1>slideshow</h1>
+	<div id="slideshow" class="slideshow">
+		<img src="imgs/room1.jpg" alt="" />
+		<img src="imgs/room2.jpg" alt="" class="alt" />
+		<img src="imgs/room3.jpg" alt="" class="alt" />
+		<img src="imgs/room4.jpg" alt="" class="alt" />
+	</div>
+<script src="jquery-1.11.1.min.js"></script>
+<script>
+$(function(){
+	setInterval(function(){
+		$('#slideshow img:first-child').fadeOut().appendTo('#slideshow').addClass('alt');
+		$('#slideshow img:first-child').fadeIn().removeClass('alt');
+	},3000);
+});
+</script>
+</body>
+</html>
