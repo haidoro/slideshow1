@@ -1,6 +1,7 @@
-$(function(){
-	setInterval(function(){
-		$('#slideshow img:first-child').fadeOut().appendTo('#slideshow').addClass('alt');
-		$('#slideshow img:first-child').fadeIn().removeClass('alt');
-	},3000);
-});
+var slide = document.getElementById('slideshow');
+var slide_img = slide.firstChild;
+setInterval(function(){
+	slide_img.appendChild(slide);
+	
+	
+},3000);
