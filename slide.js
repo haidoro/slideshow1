@@ -1,7 +1,4 @@
 var slide = document.getElementById('slideshow');
-var slide_img = slide.firstChild;
 setInterval(function(){
-	slide_img.appendChild(slide);
-	
-	
+	slide.appendChild(slide.children[0]);	
 },3000);
