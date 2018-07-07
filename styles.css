@@ -28,8 +28,10 @@ h1{
 	top:0;
 	left:0;
 	border:5px solid #fff;
+	opacity:1;
+	transition: opacity 0.5s;
 }
 /* 2番目以降のimg要素にclass="alt"を付け、消す */
 .slideshow img.alt{
-	display:none;
+	opacity: 0;
 }
